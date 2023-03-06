@@ -1,38 +1,16 @@
 
 let userInput = prompt("Please enter a letter.");
 const value = function(userInput){
-    if (userInput == "a"|| userInput == "e" || userInput == "i" || userInput == "o"|| userInput == "u") {
+    if (userInput == "a"|| userInput == "e" || userInput == "i" || userInput == "o"|| userInput == "u" ||userInput == "A"|| userInput == "E" || userInput == "I" || userInput == "O"|| userInput == "U") {
         alert("You have entered a vowel");
-        return;
+        location.reload();
      } else if 
-        (userInput !== "a" || userInput !== "e" || userInput !== "i" || userInput !== "o"|| userInput !== "u" && userInput.test(char) == true) {   
+        (userInput !== "a" || userInput !== "e" || userInput !== "i" || userInput !== "o"|| userInput !== "u" || userInput !== "A" || userInput !== "E" || userInput !== "I" || userInput !== "O"|| userInput !== "U" && userInput.test(char) === true) {   
         alert("You have entered a consonant");
-        return;
+        location.reload();
     } else {
         alert("Please enter a letter.")
         location.reload();
     }
 };
 value(userInput);
-
-
-
-
-
-
-
-
-
-
-/*
-let userInput = prompt("Please enter a letter.");
-function character(userInput){
-    if (userInput ="a"|| userInput === "e" || userInput === "i" || userInput === "o"|| userInput === "u") {
-        alert("You have entered a vowel");
-     } else 
-        alert("You have entered a consonant");
-    };
-
-    character();
-
-*/
